@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script> 
+        //  use strict:
+        // 1. Eliminates some JavaScript silent errors by changing them to throw errors.
+        // 2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode.
+        // 3. Prohibits some syntax likely to be defined in future versions of ECMAScript.
+        'use strict';
+
+        // SyntaxError: "0"-prefixed octal literals and octal escape sequences are deprecated; for octal literals use the "0o" prefix instead[Learn More]
+        /* var n = 023; */
+
+        // ReferenceError: assignment to undeclared variable b
+        /*
+                function f(x) {
+                    var a = 12;
+                    b = a + x * 35; // error!
+                }
+                f(42);
+        */
+
+        //works
+              
+                function f(x) {
+                    var a = 12, b, x =2;
+
+                    b = a + x * 35; // error!
+                    console.log(b);
+                }
+                f(42);
+        
+    </script>
+</head>
+</html
